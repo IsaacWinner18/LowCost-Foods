@@ -17,13 +17,16 @@ export default function Home() {
               <li
                 className={`${rubik.className} text-lg font-extrabold text-white`}
               >
-                <Image
+                {/* <Image
                   src="/lew.png"
                   alt="Vercel Logo"
                   width={60}
                   height={24}
                   priority
-                />
+                /> */}
+
+                <img src="/lew.png" width={60}
+                  height={24} />
               </li>
               <span className="hidden">
                 <li>DELICACIES</li>
