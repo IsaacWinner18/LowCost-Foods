@@ -102,30 +102,45 @@ export default function Home() {
 
           <div>
             <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
-
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
                 Rice, Beans, Spaghetti
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+              </p>
             </div>
 
             <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
-
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
                 Chicken, Beef, Goat Meat, Cow Heels
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+              </p>
             </div>
 
             <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
-
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
                 Turkey, Fish, Skin, Okpa
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+              </p>
             </div>
           </div>
 
@@ -141,33 +156,45 @@ export default function Home() {
 
           <div>
             <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
-
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
                 Soup, Pounded Yam, Amala, Wheat
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
-            </div>
-
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
-
-              <p className="font-medium text-3xl my-2">
-                Pap, Oat Pap
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
             </div>
 
             <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">R20</p> <hr className="h-0.5 bg-black"/>
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
+              <p className="font-medium text-3xl my-2">Pap, Oat Pap</p>
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+              </p>
+            </div>
 
+            <div>
+              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                R20
+              </p>{" "}
+              <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
                 Fiofio/Achicha, Ugba, Garri
               </p>
-              <p className="text-slate-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+              <p className="text-slate-600">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+              </p>
             </div>
           </div>
-
         </div>
       </main>
 
@@ -182,7 +209,6 @@ export default function Home() {
                 Lowest prices on the web
               </div>
             </div>
-
 
             <div className="text-center font-semibold mb-10 text-orange-100">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -215,11 +241,9 @@ export default function Home() {
                   <i className="fas fa-headset"></i> SPEAK TO US AT
                 </p>
                 <div className="text-sm font-medium text-white">
-                  <a href="tel:+2348147690057">
-                    {" "}
-                    <p>+27 72 806 2108</p>
-                    +27 74 781 2950
-                  </a>
+                  <a href="tel:+27747812950">+27 74 781 2950</a>
+                  <p>
+                     <a href="tel:+27728062108"></a> +27 72 806 2108</p>
                 </div>
               </div>
               <hr />
@@ -271,10 +295,13 @@ export default function Home() {
 
           <div className="pb-12 text-center md:text-left flex justify-center items-center">
             <p className="text-sm text-neutral-300">
-              Copyright © 2024 LOWCOST FOODS LTD. Designed & Developed by <a
+              Copyright © 2024 LOWCOST FOODS LTD. Designed & Developed by{" "}
+              <a
                 href="https://isaacwinner.vercel.app"
                 className="text-orange-400 hover:underline"
-              > Isaac Winner.
+              >
+                {" "}
+                Isaac Winner.
               </a>
             </p>
           </div>
