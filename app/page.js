@@ -109,11 +109,13 @@ export default function Home() {
                   tantalizes the senses.
                 </div>
 
+                <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
                 <button className="bg-orange-400 md:block text-white px-6 py-3 mx-7 md:ml-3 md:mb-16 font-bold rounded-full">
-                  <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
+                  
                   Order
-                  </a>
+                 
                 </button>
+                </a>
               </div>
             </div>
           </div>
@@ -277,11 +279,13 @@ export default function Home() {
               fits your budget.{" "}
             </div>
 
-            <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
             <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
+            <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
+            
                   Order
-                  </a>
+                  
             </button>
+            </a>
           </div>
         </div>
       </main>
@@ -309,8 +313,7 @@ export default function Home() {
                 </p>
                 <div className="text-sm font-medium text-white">
                   <a href="https://wa.me/27728062108?text=I%20want%20to%20order">+27 74 781 2950</a>
-                  
-                  
+                
                   <p>
                     <a href="https://wa.me/27728062108?text=I%20want%20to%20order"></a> +27 72 806 2108
                   </p>
