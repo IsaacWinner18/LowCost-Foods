@@ -1,4 +1,7 @@
+"use client"
+
 // client component
+import { useState } from "react";
 import Image from "next/image";
 import { Rubik } from "next/font/google";
 
@@ -8,6 +11,13 @@ const rubik = Rubik({
 });
 
 export default function Home() {
+
+const [toggle, setToggle] = useState(false);
+
+const handleToggle = () => {
+  setToggle(!toggle)
+}
+
   return (
     <main>
       <div className="curved-background">
@@ -25,23 +35,42 @@ export default function Home() {
                   priority
                 />
 
-                {/* <img src="/lew.png" width={60}
-                  height={24} /> */}
+                
               </li>
-              <span className="hidden">
-                <li>DELICACIES</li>
-                <li>ABOUT</li>
-                <li>FIND YOUR WAY</li>
+              
+              <div className={toggle ? "block" : "hidden" }>
+                
+              <span className={`flex flex-col py-4 absolute left-0 top-10 bg-white w-full font-semibold text-base cursor-pointer rounded duration-300`}>
+              {/* <div className={toggle ? "block" : "hidden"}>
+              <div className="w-6 h-1 bg-black"></div>
+              <div className="w-6 h-1 bg-black"></div>
+                </div> */}
+              <a href="#delicacies"><li className={` hover:bg-orange-400 hover:text-white py-2 px-2 m-1`}>
+                  DELICACIES 
+                  </li></a>
+                  <a href="#about"><li className="hover:bg-orange-400 hover:text-white py-2 px-2 m-1">
+                  ABOUT 
+                  </li></a>
+                  <a href="#delicacies"><li className="hover:bg-orange-400 hover:text-white py-2 px-2 m-1">
+                  FIND YOUR WAY 
+                  </li></a>
               </span>
+              </div>
             </ul>
           </div>
 
           <div className="flex">
             <div className="text-white mx-6">+27 72 806 2108</div>
-            <div className="space-y-1 ml-auto">
-              <div className="w-6 h-1 bg-white"></div>
-              <div className="w-6 h-1 bg-white"></div>
-              <div className="w-6 h-1 bg-white"></div>
+            <div className="space-y-1 ml-auto" onClick={handleToggle}>
+            <div
+        className={`w-6 h-1 bg-white transition-transform duration-300 ${toggle ? 'transform rotate-45 translate-y-2' : ''}`}
+      ></div>
+      <div
+        className={`w-6 h-1 bg-white transition-opacity duration-300 ${toggle ? 'opacity-0' : ''}`}
+      ></div>
+      <div
+        className={`w-6 h-1 bg-white transition-transform duration-300 ${toggle ? 'transform -rotate-45 -translate-y-2' : ''}`}
+      ></div>
             </div>
           </div>
         </header>
@@ -55,9 +84,7 @@ export default function Home() {
                 </div>
 
                 <div className="pb-3 pl-6 md:ml-1 text-slate-50 font-serif font-medium">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  aspernatur placeat, accusamus maxime facere temporibus autem
-                  voluptatibus rem
+                Welcome to Lowcost Foods, where culinary creativity meets authentic flavors. Nestled in the heart of Newtown Johannesburg, we offer a unique dining experience that tantalizes the senses.
                 </div>
 
                 <button className="bg-orange-400 md:block text-white px-6 py-3 mx-7 md:ml-3 md:mb-16 font-bold rounded-full">
@@ -69,7 +96,7 @@ export default function Home() {
         </section>
       </div>
 
-      <main className="py-4 my-12">
+      <main className="py-4 my-12" id="delicacies">
         <div className="flex items-center justify-between">
           <div>
             <span className="w-1 h-1 p-1 mr-2 bg-black "></span>
@@ -100,7 +127,7 @@ export default function Home() {
             />
           </div>
 
-          <div>
+          <div className="space-y-12">
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
                 R20
@@ -111,13 +138,13 @@ export default function Home() {
               </p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                A satisfying mix of staples, featuring fluffy rice, hearty beans, and perfectly cooked spaghetti.{" "}
               </p>
             </div>
 
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
+                R50 R25 R10 R5
               </p>{" "}
               <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
@@ -125,13 +152,13 @@ export default function Home() {
               </p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                A selection of tender meats, including succulent chicken, flavorful beef, and rich goat meat, paired with traditional cow heels.{" "}
               </p>
             </div>
 
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
+                R50 R30 R20 R10 R3 
               </p>{" "}
               <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
@@ -139,7 +166,7 @@ export default function Home() {
               </p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                Enjoy a mix of savory turkey, fresh fish, crispy skin, and a traditional serving of Okpa, a beloved delicacy.{" "}
               </p>
             </div>
           </div>
@@ -154,10 +181,10 @@ export default function Home() {
             />
           </div>
 
-          <div>
+          <div className="space-y-12">
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
+                R30 R20
               </p>{" "}
               <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
@@ -165,25 +192,25 @@ export default function Home() {
               </p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                Savor our rich, flavorful soups paired with your choice of pounded yam, soft amala, or wholesome wheat.{" "}
               </p>
             </div>
 
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
+              R20 R10
               </p>{" "}
               <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">Pap, Oat Pap</p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                Enjoy the smooth and creamy texture of traditional pap or oat pap, perfect for a light and satisfying meal.{" "}
               </p>
             </div>
 
             <div>
               <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
+                R50 R20
               </p>{" "}
               <hr className="h-0.5 bg-black" />
               <p className="font-medium text-3xl my-2">
@@ -191,7 +218,7 @@ export default function Home() {
               </p>
               <p className="text-slate-600">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
+                Delight in the hearty combination of fiofio or achicha, accompanied by the unique taste of ugba and crispy garri.{" "}
               </p>
             </div>
           </div>
@@ -206,13 +233,12 @@ export default function Home() {
                 LowCost Foods
               </div>
               <div className="text-xs text-center text-orange-100">
-                Lowest prices on the web
+              Best prices for quality meals
               </div>
             </div>
 
             <div className="text-center font-semibold mb-10 text-orange-100">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              in harum quaerat expedita magni nostrum necessitatibus{" "}
+            Discover delicious meals at unbeatable prices. Quality food that fits your budget.{" "}
             </div>
 
             <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
@@ -223,7 +249,7 @@ export default function Home() {
       </main>
 
       <section id="contacts">
-        <div className="bg-neutral-800 mx-1 px-3 rounded-se-2xl rounded-ss-2xl">
+        <div className="bg-neutral-800 mx-1 px-3 rounded-se-2xl rounded-ss-2xl" id="about">
           <div className="md:flex md:justify-center md:items-start md:gap-6 md:mx-5">
             <div className="mb-20 md:mt-24">
               <div className="text-center md:text-left text-orange-100 font-extrabold text-xl pt-4">
