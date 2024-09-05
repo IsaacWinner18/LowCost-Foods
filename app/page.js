@@ -110,7 +110,9 @@ export default function Home() {
                 </div>
 
                 <button className="bg-orange-400 md:block text-white px-6 py-3 mx-7 md:ml-3 md:mb-16 font-bold rounded-full">
+                  <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
                   Order
+                  </a>
                 </button>
               </div>
             </div>
@@ -140,122 +142,120 @@ export default function Home() {
       <main>
         <div className="mb-5 mx-2">
           <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
-          <div className="m-10">
-            <Image
-              src="/barbtwo.jpg"
-              alt="Vercel Logo"
-              width={400}
-              height={234}
-              priority
-            />
-          </div>
-
-          <div className="space-y-12">
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">
-                Rice, Beans, Spaghetti
-              </p>
-              <p className="text-slate-600">
-                {" "}
-                A satisfying mix of staples, featuring fluffy rice, hearty
-                beans, and perfectly cooked spaghetti.{" "}
-              </p>
+            <div className="m-10">
+              <Image
+                src="/barbtwo.jpg"
+                alt="Vercel Logo"
+                width={400}
+                height={234}
+                priority
+              />
             </div>
 
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R50 R25 R10 R5
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">
-                Chicken, Beef, Goat Meat, Cow Heels
-              </p>
-              <p className="text-slate-600">
-                {" "}
-                A selection of tender meats, including succulent chicken,
-                flavorful beef, and rich goat meat, paired with traditional cow
-                heels.{" "}
-              </p>
-            </div>
+            <div className="space-y-12">
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R20
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">
+                  Rice, Beans, Spaghetti
+                </p>
+                <p className="text-slate-600">
+                  {" "}
+                  A satisfying mix of staples, featuring fluffy rice, hearty
+                  beans, and perfectly cooked spaghetti.{" "}
+                </p>
+              </div>
 
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R50 R30 R20 R10 R3
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">
-                Turkey, Fish, Skin, Okpa
-              </p>
-              <p className="text-slate-600">
-                {" "}
-                Enjoy a mix of savory turkey, fresh fish, crispy skin, and a
-                traditional serving of Okpa, a beloved delicacy.{" "}
-              </p>
-            </div>
-          </div>
-          </div>
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R50 R25 R10 R5
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">
+                  Chicken, Beef, Goat Meat, Cow Heels
+                </p>
+                <p className="text-slate-600">
+                  {" "}
+                  A selection of tender meats, including succulent chicken,
+                  flavorful beef, and rich goat meat, paired with traditional
+                  cow heels.{" "}
+                </p>
+              </div>
 
-<div  className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
-
-
-          <div className="m-10">
-            <Image
-              src="/download.png"
-              alt="Vercel Logo"
-              width={300}
-              height={234}
-              priority
-            />
-          </div>
-
-          <div className="space-y-12">
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R30 R20
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">
-                Soup, Pounded Yam, Amala, Wheat
-              </p>
-              <p className="text-slate-600">
-                {" "}
-                Savor our rich, flavorful soups paired with your choice of
-                pounded yam, soft amala, or wholesome wheat.{" "}
-              </p>
-            </div>
-
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R20 R10
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">Pap, Oat Pap</p>
-              <p className="text-slate-600">
-                {" "}
-                Enjoy the smooth and creamy texture of traditional pap or oat
-                pap, perfect for a light and satisfying meal.{" "}
-              </p>
-            </div>
-
-            <div>
-              <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
-                R50 R20
-              </p>{" "}
-              <hr className="h-0.5 bg-black" />
-              <p className="font-medium text-3xl my-2">
-                Fiofio/Achicha, Ugba, Garri
-              </p>
-              <p className="text-slate-600">
-                {" "}
-                Delight in the hearty combination of fiofio or achicha,
-                accompanied by the unique taste of ugba and crispy garri.{" "}
-              </p>
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R50 R30 R20 R10 R3
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">
+                  Turkey, Fish, Skin, Okpa
+                </p>
+                <p className="text-slate-600">
+                  {" "}
+                  Enjoy a mix of savory turkey, fresh fish, crispy skin, and a
+                  traditional serving of Okpa, a beloved delicacy.{" "}
+                </p>
+              </div>
             </div>
           </div>
+
+          <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
+            <div className="m-10">
+              <Image
+                src="/download.png"
+                alt="Vercel Logo"
+                width={300}
+                height={234}
+                priority
+              />
+            </div>
+
+            <div className="space-y-12">
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R30 R20
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">
+                  Soup, Pounded Yam, Amala, Wheat
+                </p>
+                <p className="text-slate-600">
+                  {" "}
+                  Savor our rich, flavorful soups paired with your choice of
+                  pounded yam, soft amala, or wholesome wheat.{" "}
+                </p>
+              </div>
+
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R20 R10
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">Pap, Oat Pap</p>
+                <p className="text-slate-600">
+                  {" "}
+                  Enjoy the smooth and creamy texture of traditional pap or oat
+                  pap, perfect for a light and satisfying meal.{" "}
+                </p>
+              </div>
+
+              <div>
+                <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
+                  R50 R20
+                </p>{" "}
+                <hr className="h-0.5 bg-black" />
+                <p className="font-medium text-3xl my-2">
+                  Fiofio/Achicha, Ugba, Garri
+                </p>
+                <p className="text-slate-600">
+                  {" "}
+                  Delight in the hearty combination of fiofio or achicha,
+                  accompanied by the unique taste of ugba and crispy garri.{" "}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -278,7 +278,9 @@ export default function Home() {
             </div>
 
             <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
-              Order
+            <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
+                  Order
+                  </a>
             </button>
           </div>
         </div>
@@ -306,9 +308,11 @@ export default function Home() {
                   <i className="fas fa-headset"></i> SPEAK TO US AT
                 </p>
                 <div className="text-sm font-medium text-white">
-                  <a href="tel:+27747812950">+27 74 781 2950</a>
+                  <a href="https://wa.me/27728062108?text=I%20want%20to%20order">+27 74 781 2950</a>
+                  
+                  
                   <p>
-                    <a href="tel:+27728062108"></a> +27 72 806 2108
+                    <a href="https://wa.me/27728062108?text=I%20want%20to%20order"></a> +27 72 806 2108
                   </p>
                 </div>
               </div>
