@@ -143,10 +143,13 @@ export default function Home() {
 
       <main>
         <div className="mb-5 mx-2">
-          <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
+        
+
+            <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
+       
             <div className="m-10">
               <Image
-                src="/barbtwo.jpg"
+                src="/yummyjollof.png"
                 alt="Vercel Logo"
                 width={400}
                 height={234}
@@ -185,6 +188,23 @@ export default function Home() {
                   cow heels.{" "}
                 </p>
               </div>
+              </div>
+              </div>
+
+
+
+              <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
+              <div className="m-10">
+              <Image
+                src="/download.png"
+                alt="Vercel Logo"
+                width={300}
+                height={234}
+                priority
+              />
+             
+            </div>
+            <div className="space-y-12">
 
               <div>
                 <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
@@ -200,21 +220,6 @@ export default function Home() {
                   traditional serving of Okpa, a beloved delicacy.{" "}
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
-            <div className="m-10">
-              <Image
-                src="/download.png"
-                alt="Vercel Logo"
-                width={300}
-                height={234}
-                priority
-              />
-            </div>
-
-            <div className="space-y-12">
               <div>
                 <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
                   R30 R20
@@ -229,7 +234,29 @@ export default function Home() {
                   pounded yam, soft amala, or wholesome wheat.{" "}
                 </p>
               </div>
+              </div>
+              </div>
+          
 
+          
+            
+
+           
+              
+
+              <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
+              <div className="m-10">
+              <Image
+                src="/SoakedGarri.png"
+                alt="Vercel Logo"
+                width={300}
+                height={300}
+                priority
+               
+              />
+            </div>
+
+            <div className="space-y-12">
               <div>
                 <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
                   R20 R10
@@ -254,11 +281,26 @@ export default function Home() {
                 <p className="text-slate-600">
                   {" "}
                   Delight in the hearty combination of fiofio or achicha,
-                  accompanied by the unique taste of ugba and crispy garri.{" "}
+                  accompanied by the unique taste of ugba and garri.{" "}
                 </p>
               </div>
+              </div>
+              </div>
+
+
+              <div className="m-10">
+            
+              <Image
+                src="/barbtwo.jpg"
+                alt="Vercel Logo"
+                width={400}
+                height={234}
+                priority
+              />
             </div>
-          </div>
+
+            
+          
         </div>
       </main>
 
@@ -289,6 +331,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <main></main>
 
       <section id="contacts">
         <div
