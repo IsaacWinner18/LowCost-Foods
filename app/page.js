@@ -246,13 +246,13 @@ export default function Home() {
 
               <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
               <div className="m-10">
-              <Image
-                src="/SoakedGarri.png"
-                alt="Vercel Logo"
-                width={300}
-                height={300}
-                priority
                
+              <Image
+                src="/barbtwo.jpg"
+                alt="Vercel Logo"
+                width={400}
+                height={234}
+                priority
               />
             </div>
 
@@ -289,13 +289,14 @@ export default function Home() {
 
 
               <div className="m-10">
-            
+           
               <Image
-                src="/barbtwo.jpg"
+                src="/SoakedGarri.png"
                 alt="Vercel Logo"
-                width={400}
-                height={234}
+                width={300}
+                height={300}
                 priority
+               
               />
             </div>
 
