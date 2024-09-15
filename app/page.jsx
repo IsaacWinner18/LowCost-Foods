@@ -4,11 +4,16 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Rubik } from "next/font/google";
+import Testimony from "./components/Testimony"
 
 const rubik = Rubik({
   subsets: ["latin"],
   // No weights specified
 });
+
+
+
+
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
@@ -21,7 +26,7 @@ export default function Home() {
     <main>
       <div className="curved-background">
         <header>
-          <ul className={`flex justify-between py-2 px-2`}>
+          <ul className={`flex justify-between py-4 px-2`}>
             <div className="text-xs">
               <li
                 className={`${rubik.className} text-lg font-extrabold text-white`}
@@ -110,11 +115,9 @@ export default function Home() {
                 </div>
 
                 <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
-                <button className="bg-orange-400 md:block text-white px-6 py-3 mx-7 md:ml-3 md:mb-16 font-bold rounded-full">
-                  
-                  Order
-                 
-                </button>
+                  <button className="bg-orange-400 md:block text-white px-6 py-3 mx-7 md:ml-3 md:mb-16 font-bold rounded-full">
+                    Order
+                  </button>
                 </a>
               </div>
             </div>
@@ -143,10 +146,7 @@ export default function Home() {
 
       <main>
         <div className="mb-5 mx-2">
-        
-
-            <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
-       
+          <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
             <div className="m-10">
               <Image
                 src="/yummyjollof.png"
@@ -188,13 +188,11 @@ export default function Home() {
                   cow heels.{" "}
                 </p>
               </div>
-              </div>
-              </div>
+            </div>
+          </div>
 
-
-
-              <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
-              <div className="m-10">
+          <div className="md:flex md:justify-center md:items-center md: md:mr-16 ">
+            <div className="m-10">
               <Image
                 src="/download.png"
                 alt="Vercel Logo"
@@ -202,10 +200,8 @@ export default function Home() {
                 height={234}
                 priority
               />
-             
             </div>
             <div className="space-y-12">
-
               <div>
                 <p className="decoration-dotted flex justify-end m-2 text-2xl font-mono">
                   R50 R30 R20 R10 R3
@@ -234,23 +230,15 @@ export default function Home() {
                   pounded yam, soft amala, or wholesome wheat.{" "}
                 </p>
               </div>
-              </div>
-              </div>
-          
+            </div>
+          </div>
 
-          
-            
-
-           
-              
-
-              <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
-              <div className="m-10">
-               
+          <div className="md:flex md:justify-center md:items-center md: md:mr-16 md:mt-20">
+            <div className="m-10">
               <Image
-                src="/barbtwo.jpg"
+                src="/goatmeat.png"
                 alt="Vercel Logo"
-                width={400}
+                width={300}
                 height={234}
                 priority
               />
@@ -284,24 +272,18 @@ export default function Home() {
                   accompanied by the unique taste of ugba and garri.{" "}
                 </p>
               </div>
-              </div>
-              </div>
-
-
-              <div className="m-10">
-           
-              <Image
-                src="/SoakedGarri.png"
-                alt="Vercel Logo"
-                width={300}
-                height={300}
-                priority
-               
-              />
             </div>
+          </div>
 
-            
-          
+          <div className="m-10">
+            <Image
+              src="/fufuswallow.png"
+              alt="Vercel Logo"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
         </div>
       </main>
 
@@ -323,17 +305,73 @@ export default function Home() {
             </div>
 
             <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
-            <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
-            
-                  Order
-                  
-            </button>
+              <button className="bg-orange-400 text-white flex justify-center items-center px-6 py-3 mx-7 md:ml-44 mb-6 font-bold rounded-full">
+                Order
+              </button>
             </a>
           </div>
         </div>
       </main>
 
-      <main></main>
+      <main>
+      <Testimony />
+        {/* <div className="my-20 space-y-6 mx-4">
+          <div>
+            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+            lorem id penatibus imperdiet. Turpis egestas ultricies purus Lorem
+            ipsum dolor sit amet.
+          </div>
+          <div className="flex gap-5">
+            <div className="rounded-full">
+              <Image
+                src="/testimonialOne.JPG"
+                alt="testimonial one"
+                width={90}
+                height={90}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <div className="flex justify-between items-center w-full">
+              <div>
+                <b>John Doe</b>
+                <p className="text-sm">Singer</p>
+              </div>
+              <div>
+                <p>1 / 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="my-20 space-y-6 mx-4">
+          <div>
+            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+            lorem id penatibus imperdiet. Turpis egestas ultricies purus Lorem
+            ipsum dolor sit amet.
+          </div>
+          <div className="flex gap-5">
+            <div className="rounded-full">
+              <Image
+                src="/testimonialOne.JPG"
+                alt="testimonial one"
+                width={90}
+                height={90}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <div className="flex justify-between items-center w-full">
+              <div>
+                <b>John Doe</b>
+                <p className="text-sm">Singer</p>
+              </div>
+              <div>
+                <p>2 / 3</p>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </main>
 
       <section id="contacts">
         <div
@@ -357,10 +395,13 @@ export default function Home() {
                   <i className="fas fa-headset"></i> SPEAK TO US AT
                 </p>
                 <div className="text-sm font-medium text-white">
-                  <a href="https://wa.me/27728062108?text=I%20want%20to%20order">+27 74 781 2950</a>
-                
+                  <a href="https://wa.me/27728062108?text=I%20want%20to%20order">
+                    +27 74 781 2950
+                  </a>
+
                   <p>
-                    <a href="https://wa.me/27728062108?text=I%20want%20to%20order"></a> +27 72 806 2108
+                    <a href="https://wa.me/27728062108?text=I%20want%20to%20order"></a>{" "}
+                    +27 72 806 2108
                   </p>
                 </div>
               </div>
