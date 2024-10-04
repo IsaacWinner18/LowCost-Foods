@@ -5,13 +5,16 @@ import { useState } from "react";
 import Image from "next/image";
 import { Rubik } from "next/font/google";
 import Testimony from "./components/Testimony"
+// import { metadata } from './layout';
 
 const rubik = Rubik({
-  subsets: ["latin"],
+  subsets: ["latin"], weight: ['400', '600']
   // No weights specified
 });
 
-
+// export const metadata = {
+// title: "Lowcost Foods - Best African Food Restuarant in South Africa"
+// }
 
 
 
